@@ -1,7 +1,14 @@
 const prezzoKm = 0.21;
 
-let distance = prompt('Quanti kilometri vorresti percorrere?');
-let eta = prompt('Quanti anni hai?');
+let distance = parseInt(prompt('Quanti kilometri vorresti percorrere?'));
+if (isNaN(distance)) {
+    alert('Devi inserire un valore numerico');
+}
+
+let eta = parseInt(prompt('Quanti anni hai?'));
+if (isNaN(eta)) {
+    alert('Devi inserire un valore numerico');
+}
 
 let prezzoTot = prezzoKm * distance;
 let prezzoScontato;
